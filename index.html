@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>上传配件</title>
+		<style type="text/css">
+			body {
+				padding: 0;
+				font-family: "黑体";
+			}
+			
+			.container {
+				position: absolute;
+				left: 50%;
+				margin-left: -130px;
+			}
+			
+			.container span {
+				margin-right: 5px;
+			}
+			
+			input {
+				margin-top: 10px;
+				outline: none;
+				height: 25px;
+				border: 1px solid darkgray;
+				border-radius: 2px;
+			}
+			
+			::-webkit-input-placeholder {
+				font-family: "黑体";
+			}
+			
+			::-ms-input-placeholder {
+				font-family: "黑体";
+			}
+			
+			input[type="file"] {
+				border: none;
+				font-family: "黑体";
+				cursor: pointer;
+			}
+			.file-upload{
+				margin-left: 88px;
+			}
+			
+			input[type="radio"] {
+				display: inline-block;
+				position: relative;
+				top: 7px;
+			}
+			
+			textarea {
+				margin-top: 10px;
+			}
+			
+			.submit {
+				outline: none;
+				height: 35px;
+				width: 100px;
+				border: 1px solid white;
+				border-radius: 6px;
+				background-color: dodgerblue;
+				color: white;
+				font-family: "黑体";
+				font-size: 15px;
+				position: absolute;
+				left: 50%;
+				margin-left: -50px;
+				margin-top: 20px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<form action="" method="post">
+				<span id="">
+				配件名称：
+			</span><input type="text" name="" id="" placeholder="配件名称" />
+				<!--此处自动填写配件名称-->
+				<br />
+				<span id="">
+				配件品牌：
+			</span><input type="text" name="" id="" placeholder="配件品牌" />
+				<!--此处自动填写配件品牌-->
+				<br />
+				<span id="fuck">
+				宝贝卖点：
+			</span><textarea name="" rows="10" cols="21"></textarea>
+				<br />
+				<span id="">
+			 固定售价：
+			 </span><input type="text" name="" id="" />
+				<br />
+				<span id="">
+			 	宝贝数量：
+			 </span><input type="text" name="" id="" />
+				<!--自动填写-->
+				<br />
+				<span id="">
+			 	宝贝图片： 
+			 </span><input type="file" name="" id="" value="" multiple="multiple" />
+				<br />
+				<span id="">
+			 </span><input type="file" class="file-upload" name="" id="" value="" multiple="multiple" />
+			 <br />
+			 <span id="">
+			 </span><input type="file" class="file-upload" name="" id="" value="" multiple="multiple" />
+			 <br />
+				<span id="">
+			 	物流方式：
+			 </span><input type="text" name="" id="" />
+				<br />
+				<h4>售后保障信息：</h4>
+				<span id="">
+			 	开具发票：
+			 </span>
+				<input type="radio" name="radios" id="" value="有" /><label for="">有</label>
+				<input type="radio" name="radios" id="" value="无" /><label for="">无</label>
+				<br />
+				<span id="">
+			  	承诺保修：
+			  </span>
+				<input type="radio" name="radios" id="" value="有" /><label for="">有</label>
+				<input type="radio" name="radios" id="" value="无" /><label for="">无</label>
+				<br />
+				<button type="submit" class="submit">上传</button>
+			</form>
+		</div>
+
+	</body>
+
+</html>
